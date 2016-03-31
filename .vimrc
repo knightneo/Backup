@@ -9,7 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'auto-pairs'
-Bundle 'https://github.com/scrooloose/nerdtree'
+Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 Bundle 'taglist.vim'
 Bundle 'phpcomplete.vim'
