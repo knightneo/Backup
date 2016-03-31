@@ -8,8 +8,8 @@ call vundle#begin()
 " call vundle#begin('~/some/path/here')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Bundle 'gmarik/vundle'
 Bundle 'auto-pairs'
+Bundle 'https://github.com/scrooloose/nerdtree'
 Bundle 'The-NERD-Commenter'
 Bundle 'taglist.vim'
 Bundle 'phpcomplete.vim'
