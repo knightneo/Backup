@@ -21,7 +21,7 @@ call vundle#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 set cul "高亮光标所在行
-"set cuc
+set cuc
 autocmd InsertEnter * se cul    " 用浅色高亮当前行  
 set ruler           " 显示标尺  
 set showcmd         " 输入的命令显示出来，看的清楚些  
@@ -36,7 +36,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 " 使用空格代替制表符
-set expandtab
+"set expandtab
 " 在行和段开始处使用制表符
 set smarttab
 " 显示行号
@@ -59,7 +59,7 @@ filetype plugin on
 filetype indent on
 
 "将tab替换为空格
-nmap tt :%s/\t/    /g<CR>
+"nmap tt :%s/\t/    /g<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""实用设置
