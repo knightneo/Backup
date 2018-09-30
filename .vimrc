@@ -25,7 +25,6 @@ set cuc
 autocmd InsertEnter * se cul    " 用浅色高亮当前行  
 set ruler           " 显示标尺  
 set showcmd         " 输入的命令显示出来，看的清楚些  
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容  
 set scrolloff=3     " 光标移动到buffer的顶部和底部时保持3行距离  
 set nocompatible  "去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
 set autoindent
@@ -60,6 +59,17 @@ filetype indent on
 
 "将tab替换为空格
 "nmap tt :%s/\t/    /g<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""statusline 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2
+""set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容  
+set statusline=(Vim)\ \ %<%f
+set statusline+=%w%h%m%r
+set statusline+=\ %{getcwd()}
+set statusline+=\ [%{&ff}:%{&fenc}:%Y]
+set statusline+=%=%-14.(%l,%c%V%)\ .%p%%
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""实用设置
